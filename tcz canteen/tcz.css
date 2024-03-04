@@ -1,0 +1,95 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    font-family : 'Poppins',sans-serif;
+    box-sizing : border-box;
+}
+
+body {
+    margin: 0 100px;
+    background-color: #ffeae0
+}
+
+.container{
+    width : 450px;
+    
+}
+/*.hero{
+    width: 100%;
+    height : 100vh;
+    background : #04192d;
+    color : #fff;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+/*.hero: This is a class selector that targets elements with the class name "hero". It selects and applies the following styles to those elements.
+
+width: 100%;: Sets the width of the element to 100% of its parent container.
+
+height: 100vh;: Sets the height of the element to 100% of the viewport height (vh represents viewport height). This means the element will take up the entire vertical height of the viewport.
+
+background: #04192d;: Sets the background color of the element to a dark blue color with the hex code #04192d.
+
+color: #fff;: Sets the text color of the element to white (#fff).
+
+display: flex;: Turns the element into a flex container. This allows you to use flexbox CSS properties to control the layout of its child elements.
+
+align-items: center;: Aligns the flex items (child elements) vertically at the center of the container.
+
+justify-content: center;: Aligns the flex items horizontally at the center of the container.*/
+  .table-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+table{
+    align
+    width : 200px;
+    /*border-spacing : 0px;*/
+}
+h3{
+    text-align : center;
+}
+th,caption{
+    text-align : left;
+}
+table,th,td{
+    border: 1px solid #000;
+    border-collapse:collapse;
+}
+th,td{
+    padding:5px;
+}
+tr:nth-child(even){
+    background-color : #ddd;
+}
+tr:nth-child(odd){
+    background-color : #fff;
+}
+th{
+    background-color:  #800080;
+}
+input[type= "text"]{
+    width : 75px;
+    height : 30px;
+    color : #333;
+    padding : 5px;
+    border : 1px solid #ccc;
+    border-radius : 4px;
+}
+.location-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }

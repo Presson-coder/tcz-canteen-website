@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <script src="tcz.js"></script>
+        <link rel="stylesheet" href="tcz.css">
+        <title>online orders</title>
+    </head>
+    <br>
+    <body>  
+        
+        <div class="container">
+
+        </div>
+        <h3>Online purchases and deliveries</h3>
+        <br>
+        <br>
+        <div class="table-container">
+        <table>
+            <caption>Menu</caption>
+            <br>
+            <br>
+            <br>
+            <tr>
+             <th>Meal</th>
+             <th>Price</th>
+             <th>Selector</th>
+            </tr>
+            <tr>
+             <td>chips</td>
+             <td>$1.00</td>
+             <td><input type="checkbox" name ="chips" class="iterm" value="1"></td>
+            </tr>
+            <tr>
+             <td>chicken</td>
+             <td>$3.00</td>
+             <td><input type="checkbox" name ="chips" class="iterm" value="3"></td>
+            </tr>
+            <tr>
+             <td>pizza</td>
+             <td>$5.00</td>
+             <td><input type="checkbox" name ="chips" class="iterm" value="5"></td>
+            </tr>
+            <tr>
+                <td>beef stew</td>
+                <td>$1.50</td>
+                <td><input type="checkbox" name ="beef stew" class="iterm" value="1.50"></td>
+               </tr>
+               <tr>
+                <td>Roasted chicken</td>
+                <td>$1.50</td>
+                <td><input type="checkbox" name="Roasted chicken" class="iterm" value="1.50"></td>
+               </tr>
+               <tr>
+                <td>beef/chicken stir fry</td>
+                <td>$1.50</td>
+                <td><input type="checkbox" name ="beef/chicken stir fry" class="iterm" value="1.50"></td>
+               </tr>
+               <tr>
+                <td>beef/chicken curry</td>
+                <td>$1.50</td>
+                <td><input type="checkbox" name ="beef/chicken curry" class="iterm" value="1.50"></td>
+               </tr>
+               <tr>
+                <td>burgers</td>
+                <td>$1.00</td>
+                <td><input type="checkbox" name ="burgers" class="iterm" value="1"></td>
+               </tr>
+               <tr>
+                <td>russian sausages</td>
+                <td>$2.00</td>
+                <td><input type="checkbox" name ="russian sausages" class="iterm" value="2"></td>
+               </tr>
+               <tr>
+                <td>t-bone steak</td>
+                <td>$2.00</td>
+                <td><input type="checkbox" name ="t-bone steak" class="iterm" value="2"></td>
+               </tr>
+               <tr>
+                <td>pork chops</td>
+                <td>$1.00</td>
+                <td><input type="checkbox" name ="pork chops" class="iterm" value="1"></td>
+               </tr>
+               <tr>
+                <td colspan="3"><input type="reset" value="reset" onclick="resetTable()"></td>
+               </tr>
+               <TR>
+                <!--<td>Total</td>-->
+                 <!--<td><button onclick="calculateSum()">Total</button></td>-->
+                <td colspan="3">
+                    <button onclick="calculateSum()">Calculate</button>
+                    <span id="sum"></span>
+                </td>
+               </TR>
+        </table>
+    </div>
+        <br>
+        <br>
+        <caption><b>confirm selection</b></caption>
+       <br>
+       <br>
+            <form>
+                <input type="radio" name="confirmation" value="yes">yes
+                <input type="radio" name="confirmation" value="no">no
+           </form>
+           <br>
+           <form id="payments>
+            <label for="payments"><b>Payment Method</b></label><br><br>
+            <input type="radio" name="method" value="Paypal">Paypal
+            <input type="radio" name="method" value="Ecocash">Ecocash
+            <input type="radio" name="method" value="Bank-transfer">Bank-transfer
+            <input type="radio" name="method" value="Onewallet">Onewallet
+            <input type="radio" name="method" value="Debit Card Payment">Debit Card Payment
+            <input type="radio" name="method" value="Direct Deposit">Direct Deposit
+            <input type="radio" name="method" value="Cash on Delivery (COD)">Cash on Delivery (COD) <br><br>
+            <a href="tcz-pay.html" class="button">Pay for order</a>
+         
+           </form>
+            <br>
+            <form id="address-form">
+                <label for="address"><b>Address</b></label><br>
+                <br>
+                Nation : <select name="dropdown">
+                    <option value=“Zimbabwe" selected>Zimbabwe</option> 
+                    <option value=“Other">Other</option>
+                    </select> 
+                City : <input type="text" name="city" placeholder="city">
+               Customer Name: <input type="text" name="text box" placeholder="full-name">
+               Customer Address: <input type="text" id="address" name="text box" placeholder="address">
+               <input type="submit" value="submit" name="Submit">
+               <input type="reset" value="reset" name="submit">
+           </form><br><br>
+        
+          <form id="location-services">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14980.653347940915!2d28.6459697!3d-20.1689236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eb555d982867509%3A0x2db8b62d9d4da311!2sTheological%20College%20of%20Zimbabwe!5e0!3m2!1sen!2szw!4v1695927234105!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </form>   
+          <a title="print screen" alt="print screen"
+          onclick="window.print(); target="_blank"
+          style="cursor:pointer;">print button</a>
+    </body>
+</html>
